@@ -11,7 +11,10 @@ inputs.forEach(input => {
         let opt = event.target.value;
         // Concatenar el valor del botón al valor actual del display
         
-        if (opt === "=" && display.match(/\d$/) ){
+        if (opt === "=" ){
+            if (String(display).match(/\d$/)) {
+
+            }
             display.value= eval(display.value);
         } else {
             display.value += opt;
